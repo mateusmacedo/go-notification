@@ -4,11 +4,11 @@
 package wire
 
 import (
-	"github.com/mateusmacedo/go-nunu-template/internal/server"
-	"github.com/mateusmacedo/go-nunu-template/pkg/app"
-	"github.com/mateusmacedo/go-nunu-template/pkg/jwt"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
-	"github.com/mateusmacedo/go-nunu-template/pkg/server/http"
+	"github.com/mateusmacedo/go-notification/internal/server"
+	"github.com/mateusmacedo/go-notification/pkg/app"
+	"github.com/mateusmacedo/go-notification/pkg/jwt"
+	"github.com/mateusmacedo/go-notification/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/server/http"
 
 	"github.com/google/wire"
 	"github.com/spf13/viper"

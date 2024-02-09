@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
-	"github.com/mateusmacedo/go-nunu-template/pkg/zapgorm2"
+	"github.com/mateusmacedo/go-notification/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/zapgorm2"
 	"github.com/redis/go-redis/v9"
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"

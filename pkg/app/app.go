@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/mateusmacedo/go-nunu-template/pkg/server"
+	"github.com/mateusmacedo/go-notification/pkg/server"
 )
 
 type App struct {

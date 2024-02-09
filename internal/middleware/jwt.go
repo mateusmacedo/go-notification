@@ -3,11 +3,11 @@ package middleware
 import (
 	"net/http"
 
-	v1 "github.com/mateusmacedo/go-nunu-template/api/v1"
+	v1 "github.com/mateusmacedo/go-notification/api/v1"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mateusmacedo/go-nunu-template/pkg/jwt"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/jwt"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"go.uber.org/zap"
 )
 

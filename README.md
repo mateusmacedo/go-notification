@@ -8,19 +8,19 @@
 <h1 align="center">Go Nunu Template</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/github.com/mateusmacedo/go-nunu-template?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/github.com/mateusmacedo/go-notification?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/github.com/mateusmacedo/go-nunu-template?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/github.com/mateusmacedo/go-notification?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/github.com/mateusmacedo/go-nunu-template?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/github.com/mateusmacedo/go-notification?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/github.com/mateusmacedo/go-nunu-template?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/github.com/mateusmacedo/go-notification?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/github.com/mateusmacedo/go-nunu-template?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/github.com/mateusmacedo/go-notification?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/github.com/mateusmacedo/go-nunu-template?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/github.com/mateusmacedo/go-notification?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/github.com/mateusmacedo/go-nunu-template?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/github.com/mateusmacedo/go-notification?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
@@ -68,7 +68,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [
 
 ```bash
 # Clone this project
-$ git clone https://github.com/github.com/mateusmacedo/go-nunu-template
+$ git clone https://github.com/github.com/mateusmacedo/go-notification
 
 # Access
 $ cd go-notification

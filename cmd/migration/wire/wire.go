@@ -5,10 +5,10 @@ package wire
 
 import (
 	"github.com/google/wire"
-	"github.com/mateusmacedo/go-nunu-template/internal/repository"
-	"github.com/mateusmacedo/go-nunu-template/internal/server"
-	"github.com/mateusmacedo/go-nunu-template/pkg/app"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/internal/repository"
+	"github.com/mateusmacedo/go-notification/internal/server"
+	"github.com/mateusmacedo/go-notification/pkg/app"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"github.com/spf13/viper"
 )
 

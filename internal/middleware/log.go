@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/mateusmacedo/go-nunu-template/pkg/helper/md5"
-	"github.com/mateusmacedo/go-nunu-template/pkg/helper/uuid"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/helper/md5"
+	"github.com/mateusmacedo/go-notification/pkg/helper/uuid"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"go.uber.org/zap"
 )
 

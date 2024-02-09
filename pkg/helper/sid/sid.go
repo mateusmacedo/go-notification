@@ -1,7 +1,7 @@
 package sid
 
 import (
-	"github.com/mateusmacedo/go-nunu-template/pkg/helper/convert"
+	"github.com/mateusmacedo/go-notification/pkg/helper/convert"
 	"github.com/sony/sonyflake"
 )
 
