@@ -5,9 +5,9 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/mateusmacedo/go-nunu-template/cmd/server/wire"
-	"github.com/mateusmacedo/go-nunu-template/pkg/config"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/cmd/server/wire"
+	"github.com/mateusmacedo/go-notification/pkg/config"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"go.uber.org/zap"
 )
 

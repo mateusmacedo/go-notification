@@ -1,10 +1,10 @@
 package service
 
 import (
-	"github.com/mateusmacedo/go-nunu-template/internal/repository"
-	"github.com/mateusmacedo/go-nunu-template/pkg/helper/sid"
-	"github.com/mateusmacedo/go-nunu-template/pkg/jwt"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/internal/repository"
+	"github.com/mateusmacedo/go-notification/pkg/helper/sid"
+	"github.com/mateusmacedo/go-notification/pkg/jwt"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 )
 
 type Service struct {

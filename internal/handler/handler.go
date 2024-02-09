@@ -2,8 +2,8 @@ package handler
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mateusmacedo/go-nunu-template/pkg/jwt"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/jwt"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 )
 
 type Handler struct {

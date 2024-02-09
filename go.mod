@@ -1,4 +1,4 @@
-module github.com/mateusmacedo/go-nunu-template
+module github.com/mateusmacedo/go-notification
 
 go 1.19
 

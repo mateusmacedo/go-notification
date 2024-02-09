@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	v1 "github.com/mateusmacedo/go-nunu-template/api/v1"
-	"github.com/mateusmacedo/go-nunu-template/pkg/helper/md5"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	v1 "github.com/mateusmacedo/go-notification/api/v1"
+	"github.com/mateusmacedo/go-notification/pkg/helper/md5"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"github.com/spf13/viper"
 )
 

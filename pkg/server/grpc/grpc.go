@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"google.golang.org/grpc"
 )
 

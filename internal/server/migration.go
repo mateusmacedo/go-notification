@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"gorm.io/gorm"
 )
 

@@ -3,7 +3,7 @@ package server
 import (
 	"context"
 
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 )
 
 type Job struct {

@@ -4,9 +4,9 @@ import (
 	"context"
 	"flag"
 
-	"github.com/mateusmacedo/go-nunu-template/cmd/task/wire"
-	"github.com/mateusmacedo/go-nunu-template/pkg/config"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/cmd/task/wire"
+	"github.com/mateusmacedo/go-notification/pkg/config"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 )
 
 func main() {

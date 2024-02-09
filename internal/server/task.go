@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/go-co-op/gocron"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/log"
 	"go.uber.org/zap"
 )
 

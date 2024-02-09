@@ -2,12 +2,12 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
-	apiV1 "github.com/mateusmacedo/go-nunu-template/api/v1"
-	"github.com/mateusmacedo/go-nunu-template/docs"
-	"github.com/mateusmacedo/go-nunu-template/internal/middleware"
-	"github.com/mateusmacedo/go-nunu-template/pkg/jwt"
-	"github.com/mateusmacedo/go-nunu-template/pkg/log"
-	"github.com/mateusmacedo/go-nunu-template/pkg/server/http"
+	apiV1 "github.com/mateusmacedo/go-notification/api/v1"
+	"github.com/mateusmacedo/go-notification/docs"
+	"github.com/mateusmacedo/go-notification/internal/middleware"
+	"github.com/mateusmacedo/go-notification/pkg/jwt"
+	"github.com/mateusmacedo/go-notification/pkg/log"
+	"github.com/mateusmacedo/go-notification/pkg/server/http"
 	"github.com/spf13/viper"
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
