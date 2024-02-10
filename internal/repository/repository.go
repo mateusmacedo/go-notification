@@ -37,8 +37,6 @@ func NewTransaction(r *Repository) Transaction {
 	return r
 }
 
-// DB return tx
-// If you need to create a Transaction, you must call DB(ctx) and Transaction(ctx,fn)
 func (r *Repository) DB(ctx context.Context) *gorm.DB {
 	v := ctx.Value(ctxTxKey)
 	if v != nil {
@@ -65,6 +63,7 @@ func NewDB(conf *viper.Viper, l *log.Logger) *gorm.DB {
 	db = db.Debug()
 	return db
 }
+
 func NewRedis(conf *viper.Viper) *redis.Client {
 	rdb := redis.NewClient(&redis.Options{
 		Addr:     conf.GetString("data.redis.addr"),
