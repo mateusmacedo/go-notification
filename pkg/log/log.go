@@ -2,13 +2,14 @@ package log
 
 import (
 	"context"
+	"os"
+	"time"
+
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
-	"os"
-	"time"
 )
 
 const ctxLoggerKey = "zapLogger"
@@ -74,14 +75,17 @@ func NewLog(conf *viper.Viper) *Logger {
 			EncodeCaller:   zapcore.ShortCallerEncoder,
 		})
 	}
+
 	core := zapcore.NewCore(
 		encoder,
 		zapcore.NewMultiWriteSyncer(zapcore.AddSync(os.Stdout), zapcore.AddSync(&hook)), // Print to console and file
 		level,
 	)
+
 	if conf.GetString("env") != "prod" {
 		return &Logger{zap.New(core, zap.Development(), zap.AddCaller(), zap.AddStacktrace(zap.ErrorLevel))}
 	}
+
 	return &Logger{zap.New(core, zap.AddCaller(), zap.AddStacktrace(zap.ErrorLevel))}
 }
 
@@ -97,6 +101,7 @@ func (l *Logger) WithValue(ctx context.Context, fields ...zapcore.Field) context
 		c.Request = c.Request.WithContext(context.WithValue(ctx, ctxLoggerKey, l.WithContext(ctx).With(fields...)))
 		return c
 	}
+
 	return context.WithValue(ctx, ctxLoggerKey, l.WithContext(ctx).With(fields...))
 }
 
@@ -105,10 +110,12 @@ func (l *Logger) WithContext(ctx context.Context) *Logger {
 	if c, ok := ctx.(*gin.Context); ok {
 		ctx = c.Request.Context()
 	}
+
 	zl := ctx.Value(ctxLoggerKey)
 	ctxLogger, ok := zl.(*zap.Logger)
 	if ok {
 		return &Logger{ctxLogger}
 	}
+
 	return l
 }

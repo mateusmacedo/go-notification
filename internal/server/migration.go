@@ -19,6 +19,7 @@ func NewMigrate(db *gorm.DB, log *log.Logger) *Migrate {
 		log: log,
 	}
 }
+
 func (m *Migrate) Start(ctx context.Context) error {
 	// if err := m.db.AutoMigrate(&model.User{}); err != nil {
 	// 	m.log.Error("user migrate error", zap.Error(err))
@@ -28,6 +29,7 @@ func (m *Migrate) Start(ctx context.Context) error {
 	os.Exit(0)
 	return nil
 }
+
 func (m *Migrate) Stop(ctx context.Context) error {
 	m.log.Info("AutoMigrate stop")
 	return nil

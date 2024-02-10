@@ -35,11 +35,14 @@ func main() {
 
 	app, cleanup, err := wire.NewWire(conf, logger)
 	defer cleanup()
+
 	if err != nil {
 		panic(err)
 	}
+
 	logger.Info("server start", zap.String("host", "http://127.0.0.1:"+conf.GetString("http.port")))
 	logger.Info("docs addr", zap.String("addr", fmt.Sprintf("http://127.0.0.1:%d/swagger/index.html", conf.GetInt("http.port"))))
+
 	if err = app.Run(context.Background()); err != nil {
 		panic(err)
 	}

@@ -40,33 +40,13 @@ func NewHTTPServer(
 		middleware.RequestLogMiddleware(logger),
 		//middleware.SignMiddleware(log),
 	)
+
 	s.GET("/", func(ctx *gin.Context) {
 		logger.WithContext(ctx).Info("health")
 		apiV1.HandleSuccess(ctx, map[string]interface{}{
 			":)": "Its on!",
 		})
 	})
-
-	// v1 := s.Group("/v1")
-	// {
-	// 	// No route group has permission
-	// 	noAuthRouter := v1.Group("/")
-	// 	{
-	// 		noAuthRouter.POST("/register", userHandler.Register)
-	// 		noAuthRouter.POST("/login", userHandler.Login)
-	// 	}
-	// 	// Non-strict permission routing group
-	// 	noStrictAuthRouter := v1.Group("/").Use(middleware.NoStrictAuth(jwt, logger))
-	// 	{
-	// 		noStrictAuthRouter.GET("/user", userHandler.GetProfile)
-	// 	}
-
-	// 	// Strict permission routing group
-	// 	strictAuthRouter := v1.Group("/").Use(middleware.StrictAuth(jwt, logger))
-	// 	{
-	// 		strictAuthRouter.PUT("/user", userHandler.UpdateProfile)
-	// 	}
-	// }
 
 	return s
 }
